@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galery Arcos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            margin-top: 80px;
+            margin-bottom: 20px;
+            font-size: 200px;
+        }
+
+        h1:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: navy;
+        }
+
+        h2{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 70px;
+        }
+
+        img{
+            height: 800px;
+            width: 1100px;     
+        }   
+        /* Gallery Grid */
+          .container-gallery {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 1000px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><img src="./image/Logo ARCoS.png" alt=""></li>
+            <li><a href="./index.html">Beranda</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./divisi_arcos.html">Divisi ARCoS</a></li>
+            <li><a href="./program_kerja.html">Program Kerja</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+            <li><img src="./image/logo-polsri.png" alt=""></li>
+          </ul>
+        </nav>
+      </header>
+
+    <h1>Komunitas ARCoS</h1>
+    <h2>Automation and Robotic Club of Sriwijaya</h2>
+    <div>
+    <img src="./image/IMG_4914.JPG" alt="Faircos">
+    </div>
+
+    <div class="container-gallery">
+    <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./image/menanglf.JPG" alt="Robotic Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/krsbi24.JPG" alt="Robotic Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/krai2.jpg" alt="Robotic Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/oprec.jpg" alt="Robotic Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/lf.JPG" alt="Robotic Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/krsbi2.jpg" alt="Robotic Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/anu.JPG" alt="Robotic Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/lflg.JPG" alt="Robotic Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/webinar.JPG" alt="Robotic Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/workshp.JPG" alt="Robotic Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/krsti.jpg" alt="Robotic Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="./image/krtmi.jpg" alt="Robotic Image 6">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Automation and Robotic Club of Sriwijaya</p>
+            <p>Asak Galak Kito Pacak !!!</p>
+        </div>
+    </footer>
+<h3></h3>
+</body>
+</html>

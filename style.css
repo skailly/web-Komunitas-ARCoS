@@ -1,0 +1,117 @@
+*{
+    margin: auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+}
+  
+  header {
+    background-color: #040345;
+    padding: 1px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: double;
+    padding: 14px 20px;
+    font-size: 25px;
+  }
+  
+  nav li a:hover {
+    background-color: cornflowerblue;
+    color: #fff;
+  }
+
+  nav li img{
+    height: 70px;
+    width: 70px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add media query for better responsiveness */
+@media (max-width: 600px) {
+    body{
+      height: 200px;
+      width: 200px;
+    }
+
+    div{
+      height: 200px;
+      width: 200px;
+  }
+
+  img{
+    height: 200px;
+      width: 200px;
+  }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .gallery-item img {
+        height: 150px;
+        object-fit: cover;
+    }
+}
